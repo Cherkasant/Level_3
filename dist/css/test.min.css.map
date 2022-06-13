@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../../teachmeskills/lesson8/test.scss"
+    ],
+    "names": [],
+    "file": "test.min.css"
+}

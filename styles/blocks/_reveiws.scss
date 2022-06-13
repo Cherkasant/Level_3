@@ -1,0 +1,46 @@
+.reviews {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+  &__content_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_black_max;
+    padding: 10px;
+  }
+  &__content_divider {
+    width: 170px;
+    border-color: $main_coral;
+  }
+  &__content_description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $main_grey_low;
+  }
+  &__cards {
+    display: flex;
+  }
+  &__card_content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $main_grey_low;
+    width: 317px;
+    background: #e2e2e2;
+    border-radius: 10px;
+  }
+}

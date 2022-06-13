@@ -1,0 +1,48 @@
+.btn {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  outline: none;
+  background-color: $main_coral;
+  border: none;
+  color: $main-white;
+  transition: border 0.3s, color 0.3s;
+  padding: 1em 5em;
+
+  &.btn-info {
+    background: none;
+    border: 2px solid $main_white;
+  }
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $main_coral;
+    color: $main_coral;
+  }
+  &:active {
+    cursor: pointer;
+    border: 2px solid $main_coral;
+    background-color: $main_coral_max;
+    color: $main_white;
+  }
+  &.btn-tab {
+    width: 270px;
+  }
+  &.btn-tab:hover {
+    cursor: pointer;
+    background-color: $main_coral_max;
+    border: none;
+    color: $main-white;
+  }
+  &.btn-tab:active {
+    cursor: pointer;
+    background-color: $main_coral;
+    border: none;
+    color: $main-white;
+    box-shadow: inset 0px 0px 10px #ab4949;
+  }
+}
