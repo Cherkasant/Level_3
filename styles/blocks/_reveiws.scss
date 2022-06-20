@@ -1,0 +1,172 @@
+.reviews {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  @media (max-width: $screen-laptop) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: $screen-mobile) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+  &__content_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_black_max;
+    padding: 10px;
+    @media (max-width: $screen-laptop) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  &__content_divider {
+    width: 170px;
+    border-color: $main_coral;
+    @media (max-width: $screen-laptop) {
+      width: 143px;
+    }
+    @media (max-width: $screen-mobile) {
+      width: 134px;
+    }
+  }
+  &__content_description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $main_grey_low;
+    @media (max-width: $screen-laptop) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  &__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 83px;
+  }
+
+  &__card {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 1100px) {
+      width: 317px;
+    }
+    @media (max-width: $screen-xl-min) {
+      width: 317px;
+    }
+
+    @media (max-width: $screen-laptop) {
+      width: 317px;
+    }
+    @media (max-width: $screen-lg-min) {
+      width: 288px;
+    }
+    @media (max-width: $screen-md-min) {
+      width: 225px;
+    }
+    @media (max-width: $screen-mobile) {
+      width: 288px;
+    }
+  }
+  &__card_content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $main_grey_low;
+    width: 370px;
+    background: $main_grey_review;
+    border-radius: 10px;
+    padding: 38px 24px;
+    position: relative;
+    @media (max-width: $screen-xl-min) {
+      width: 317px;
+      padding: 50px 30px;
+    }
+
+    @media (max-width: $screen-laptop) {
+      width: 317px;
+      padding: 50px 30px;
+    }
+    @media (max-width: $screen-lg-min) {
+      width: 288px;
+    }
+    @media (max-width: $screen-md-min) {
+      width: 225px;
+    }
+    @media (max-width: $screen-mobile) {
+      width: 288px;
+    }
+  }
+  &__card_box {
+    display: flex;
+    column-gap: 22px;
+    padding-top: 42px;
+    @media (max-width: $screen-laptop) {
+      padding-top: 66px;
+    }
+  }
+  &__card_subbox {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $screen-laptop) {
+      row-gap: 20px;
+    }
+  }
+  &__card_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    @media (max-width: $screen-laptop) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    @media (max-width: $screen-mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  &__card_subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    @media (max-width: $screen-laptop) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (max-width: $screen-mobile) {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  &__card_img {
+    width: 70px;
+    height: 70px;
+    @media (max-width: $screen-laptop) {
+      width: 63px;
+      height: 63px;
+    }
+  }
+  @media (max-width: $screen-mobile) {
+    .hidden {
+      display: none;
+    }
+  }
+}

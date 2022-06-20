@@ -1,0 +1,29 @@
+.slider {
+  display: none;
+  &__navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: 31px;
+    display: none;
+    justify-content: space-evenly;
+    @media (max-width: $screen-mobile) {
+      display: flex;
+    }
+  }
+  &__btn {
+    border: 1px solid $main_grey_low;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    &.checked {
+      background: $main_grey_low;
+    }
+  }
+  &-btn:hover {
+    background: $main_grey_low;
+  }
+  &-btn:active {
+    background: $main_grey_low;
+  }
+}

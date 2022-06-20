@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/icons/fav.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/css/styles.min.css" />
+
+  <title>Level_3</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__link">
+        <svg class="logo logo-nav">
+          <use href="./assets/icons/sprites.svg#logo"></use>
+        </svg>
+        <ul class="header__nav-ul">
+          <li class="header__nav-ul-item">
+            <a href="/" target="_blank">features</a>
+          </li>
+          <li class="header__nav-ul-item">
+            <a href="/" target="_blank">About</a>
+          </li>
+          <li class="header__nav-ul-item">
+            <a href="/" target="_blank">Pricing</a>
+          </li>
+          <li class="header__nav-ul-item">
+            <a href="/" target="_blank">Reviews</a>
+          </li>
+          <li class="header__nav-ul-item">
+            <a href="/" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <input
+      type="checkbox"
+      id="burger_checkbox"
+      class="burger"
+      name="burger__label"
+    />
+    <label for="burger_checkbox" class="burger__label">
+      <svg class="burger-icon">
+        <use href="./assets/icons/sprites.svg#burger" />
+      </svg>
+    </label>
+    <div class="burger__menu">
+      <div class="burger__logo">
+        <svg class="logo burg ">
+          <use href="./assets/icons/sprites.svg#logo"></use>
+        </svg>
+        <label for="burger_checkbox" class="burger__close">
+          <svg class="burger-icon closed">
+            <use href="./assets/icons/sprites.svg#escape" />
+          </svg>
+        </label>
+      </div>
+      <nav>
+        <ul class="burger__menu-list">
+          <li class="burger__menu-item">
+            <a href="/" class="burger__menu-link">features</a>
+          </li>
+          <li class="burger__menu-item">
+            <a href="/" class="burger__menu-link">About</a>
+          </li>
+          <li class="burger__menu-item">
+            <a href="/" class="burger__menu-link">Pricing</a>
+          </li>
+          <li class="burger__menu-item">
+            <a href="/" class="burger__menu-link">Reviews</a>
+          </li>
+          <li class="burger__menu-item">
+            <a href="/" class="burger__menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__info">
+            <svg class="logo logo-max">
+              <use href="./assets/icons/sprites.svg#logo"></use>
+            </svg>
+            <h1 class="hero__title">
+              MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+            </h1>
+            <hr class="hero__divider" />
+            <p class="hero__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <button type="button" class="btn btn-info">Download</button>
+          </div>
+          <form action="mailto:test@gmail.com" method="post" class="form">
+            <div class="form__inner-wrapper">
+              <h4 class="form__title">
+                Try Your <span>FREE</span> Trial Today
+              </h4>
+              <label for="input-name" class="form__label">Name</label>
+              <input type="text" name="name" id="input-name" class="form__input" required />
+              <label for="input-password" class="form__label">Password</label>
+              <input type="password" name="name" id="input-password" class="form__input" required />
+              <label for="input-email" class="form__label">Email</label>
+              <input type="email" name="name" id="input-email" class="form__input" required />
+            </div>
+            <button type="submit" class="form__btn">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="social">
+          <div class="social__content">
+            <h4 class="social__title">Social Media</h4>
+            <p class="social__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </p>
+          </div>
+          <div class="social__icon-box">
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#facebook"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#twitter"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#linked"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#pinterest"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#instagram"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#github"></use>
+            </svg>
+            <svg class="logo-icon">
+              <use href="./assets/icons/sprites.svg#rss"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="tabs">
+          <input class="tabs__radio" id="one" name="group" type="radio" checked />
+          <input class="tabs__radio" id="two" name="group" type="radio" />
+          <input class="tabs__radio" id="three" name="group" type="radio" />
+          <div class="tabs__labels">
+            <label class="tab" id="one-tab" for="one">tab 1</label>
+            <label class="tab" id="two-tab" for="two">tab 2</label>
+            <label class="tab" id="three-tab" for="three">tab 3</label>
+          </div>
+          <div class="tabs__box">
+            <div class="tabs__panels">
+              <div class="tabs__panel__element" id="one-panel">
+                <h3 class="tabs__panel__element-title">
+                  Tabs with soft transitioning effect1.
+                </h3>
+                <p class="tabs__panel__element-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+                <button type="button" class="btn btn-tab">Download</button>
+              </div>
+              <div class="tabs__panel__element" id="two-panel">
+                <h3 class="tabs__panel__element-title">
+                  Tabs with soft transitioning effect2.
+                </h3>
+                <p class="tabs__panel__element-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+                <button type="button" class="btn btn-tab">Download</button>
+              </div>
+              <div class="tabs__panel__element" id="three-panel">
+                <h3 class="tabs__panel__element-title">
+                  Tabs with soft transitioning effect3.
+                </h3>
+                <p class="tabs__panel__element-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+                <button type="button" class="btn btn-tab">Download</button>
+              </div>
+            </div>
+            <div class="tabs__panel__element-bg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="about">
+          <div class="about__content">
+            <h2 class="about__content_title">WHY THIS IS AWESOME</h2>
+            <hr class="about__content_divider">
+            </hr>
+            <p class="about__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="about__cards">
+            <div class="about__card">
+              <svg class="logo-icon-card">
+                <use href="./assets/icons/sprites.svg#card_1"></use>
+              </svg>
+              <h4 class="about__card-title">Thoughtful Design</h4>
+              <p class="about__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+
+            </div>
+            <div class="about__card">
+              <svg class="logo-icon-card">
+                <use href="./assets/icons/sprites.svg#card_2"></use>
+              </svg>
+              <h4 class="about__card-title">Thoughtful Design</h4>
+              <p class="about__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+
+            </div>
+            <div class="about__card">
+              <svg class="logo-icon-card">
+                <use href="./assets/icons/sprites.svg#card_3"></use>
+              </svg>
+              <h4 class="about__card-title">Thoughtful Design</h4>
+              <p class="about__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="pricing">
+          <div class="pricing__content">
+            <h2 class="pricing__content_title">pricing options</h2>
+            <hr class="pricing__content_divider"></hr>
+            <p class="pricing__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="pricing__list">
+            <div class="pricing__card">
+            <h4 class="pricing__card_title">Basic</h4>
+            <h3 class="pricing__card_subtitle">$10</h3>
+            <h5 class="pricing__card_name">Free for life</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+          </div>
+          <div class="pricing__card  filter positioned">
+            <h4 class="pricing__card_title">Optima</h4>
+            <h3 class="pricing__card_subtitle">$20</h3>
+            <h5 class="pricing__card_name">Free for life</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+          </div>
+          <div class="pricing__card">
+            <h4 class="pricing__card_title">Pro</h4>
+            <h3 class="pricing__card_subtitle">$30</h3>
+            <h5 class="pricing__card_name">Free for life</h5>
+            <h5 class="pricing__card_element"><span>1 gb of space</span></h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+            <h5 class="pricing__card_element"><span>1 gb of space</span></h5>
+            <h5 class="pricing__card_element">1 gb of space</h5>
+          </div>
+        </div>
+          </div>
+      </div>
+    </section>
+
+<section> 
+<div class="container">
+  <div class="reviews">
+    <div class="reviews__content">
+      <h2 class="reviews__content_title">what our customers are saying</h2>
+      <hr class="reviews__content_divider"></hr>
+      <p class="reviews__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="reviews__cards">
+      <div class="reviews__card hidden">
+        <div class="reviews__card_content">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Doloribus 
+        accusamus expedita repellat similique 
+        odio aspernatur ex, architecto eaque 
+        quo suscipit.
+        <div class="triangle"></div></div>
+       
+    
+        <div class="reviews__card_box">
+          <img src="./assets/img/bg_rev1.jpg" alt="aaa" class="reviews__card_img">
+          <div class="reviews__card_subbox">
+            <h4 class="reviews__card_title">Davis Rhiel Madsen</h4>
+            <h5 class="reviews__card_subtitle">Manager</h5></div>
+          
+        </div>
+        
+      </div> 
+      <div class="reviews__card ">
+        <div class="reviews__card_content">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Doloribus 
+        accusamus expedita repellat similique 
+        odio aspernatur ex, architecto eaque 
+        quo suscipit.
+        <div class="triangle"></div></div>
+        
+    
+        <div class="reviews__card_box">
+          <img src="./assets/img/bg_rev2.jpg" alt="aaa" class="reviews__card_img">
+          <div class="reviews__card_subbox">
+            <h4 class="reviews__card_title">Jaydon Rosser</h4>
+            <h5 class="reviews__card_subtitle">Manager</h5></div>
+          
+        </div>
+        
+      </div> 
+      <div class="reviews__card hidden">
+        <div class="reviews__card_content">Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Doloribus 
+        accusamus expedita repellat similique 
+        odio aspernatur ex, architecto eaque 
+        quo suscipit.   <div class="triangle"></div></div>
+     
+    
+        <div class="reviews__card_box">
+          <img src="./assets/img/bg_rev3.jpg" alt="aaa" class="reviews__card_img">
+          <div class="reviews__card_subbox">
+            <h4 class="reviews__card_title">Cooper Dorwart</h4>
+            <h5 class="reviews__card_subtitle">Manager</h5></div>
+          
+        </div>
+        
+      </div> 
+      
+    </div>
+    <div class="slider"><input type="radio" name="radio-btn" id="radio1"  />
+
+      <input type="radio" name="radio-btn" id="radio2"  checked/>
+
+      <input type="radio" name="radio-btn" id="radio3" />
+      
+    </div>
+    <div class="slider__navigation"> 
+      <label for="radio1" class="slider__btn"> </label>
+      <label for="radio2" class="slider__btn checked"> </label>
+      <label for="radio3" class="slider__btn"> </label></div>
+    
+            
+           
+  </div>
+</div>
+</section>
+<section class="banner">
+  <div class="container">
+    <div class="banner__content">
+      <div class="banner__title">STYLISH AXURE DESIGN</div>
+      <hr class="banner__divider"></hr>
+      <div class="banner__description">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</div>
+      <button type="button" class="btn btn-banner">Download</button>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="contact">
+      <div class="contact__content">
+      <h2 class="contact__content_title">contact us</h2>
+      <hr class="contact__content_divider"></hr>
+      <p class="contact__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <form action="mailto:test@gmail.com" method="post" class="form center">
+      <div class="form__box">
+        <div class="form__inner-wrapper form__footer_wrapper">
+       
+        <label for="input-name" class="form__label">Name</label>
+        <input type="text" name="name" id="input-name" class="form__input" required />
+        <label for="input-password" class="form__label">Password</label>
+        <input type="password" name="name" id="input-password" class="form__input" required />
+        <label for="input-email" class="form__label">Email</label>
+        <input type="email" name="name" id="input-email" class="form__input " required />
+      </div>
+<div class="form__box-message">
+  <label for="input-message" class="form__label">Message:</label>
+  <input type="text" name="name" id="input-message" class="form__message" /></div>
+      
+    </div>
+      
+      <button type="submit" class="form__btn font ">Send Message</button>
+    </form>
+  </div>
+    
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+    <section>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__icon-box">
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#facebook"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#twitter"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#linked"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#pinterest"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#instagram"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#github"></use>
+          </svg>
+          <svg class="logo-footer">
+            <use href="./assets/icons/sprites.svg#rss"></use>
+          </svg>
+        </div>
+        <h5 class="footer__title">© 2015 Axure Themes</h5>
+      </div>
+        
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>
