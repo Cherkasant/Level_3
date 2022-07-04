@@ -1,0 +1,63 @@
+.logo {
+  width: 86px;
+  height: 30px;
+  &.burg {
+    width: 65px;
+    height: 23px;
+  }
+}
+.logo-max {
+  width: 160px;
+  height: 55px;
+}
+.logo-icon {
+  width: 70px;
+  height: 70px;
+  @media (max-width: $screen-laptop) {
+    width: 64px;
+    height: 64px;
+  }
+  @media (max-width: $screen-sm-min-small) {
+    width: 26px;
+    height: 26px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.logo-nav {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  @media (max-width: $screen-sm-min-small) {
+    width: 65px;
+    height: 23px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 65px;
+    height: 23px;
+  }
+}
+
+.logo-footer {
+  width: 53px;
+  height: 53px;
+  @media (max-width: $screen-laptop) {
+    width: 45px;
+    height: 45px;
+  }
+  @media (max-width: $screen-mobile) {
+    width: 26px;
+    height: 26px;
+  }
+}
+.logo-icon-card {
+  width: 92px;
+  height: 92px;
+  @media (max-width: $screen-laptop) {
+    width: 80px;
+    height: 80px;
+  }
+}

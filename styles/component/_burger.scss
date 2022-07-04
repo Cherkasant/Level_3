@@ -1,0 +1,125 @@
+.burger {
+  display: none;
+  &__label {
+    cursor: pointer;
+    display: none;
+    @media (max-width: $screen-sm-min-small) {
+      cursor: pointer;
+      display: block;
+    }
+    @media (max-width: $screen-mobile) {
+      cursor: pointer;
+      display: block;
+    }
+  }
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(107, 85, 106, 0.551);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    transform: translateX(-100vw);
+    transition: all 0.5s;
+    padding: 2.5em;
+    display: none;
+    flex-direction: column;
+    @media (max-width: $screen-sm-min) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: $main_black_max;
+      backdrop-filter: blur(5px);
+      z-index: 100;
+      transform: translateX(-150vw);
+      transition: all 0.5s;
+      padding: 2.5em;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: $screen-sm-min-small) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: $main_black_max;
+      backdrop-filter: blur(5px);
+      z-index: 100;
+      transform: translateX(-120vw);
+      transition: all 0.5s;
+      padding: 2.5em;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: $screen-mobile) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: $main_black_max;
+      backdrop-filter: blur(5px);
+      z-index: 100;
+      transform: translateX(-110vw);
+      transition: all 0.5s;
+      padding: 2.5em;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__close {
+    font-size: 24px;
+    color: var(--color-white);
+    font-weight: 700;
+    display: block;
+    align-self: center;
+    cursor: pointer;
+  }
+  &-icon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 24px;
+    height: 18px;
+    &.closed {
+      top: 39px;
+    }
+  }
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    height: 574px;
+    padding-left: 0;
+    align-items: center;
+    margin-top: 43px;
+  }
+  &__menu-link {
+    color: $main_white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &:checked ~ &__menu {
+    transform: translateX(0);
+  }
+  &__logo {
+    display: flex;
+    @media (max-width: $screen-sm-min-small) {
+      display: flex;
+      column-gap: 150px;
+    }
+    @media (max-width: $screen-mobile) {
+      display: flex;
+      column-gap: 150px;
+    }
+  }
+}
