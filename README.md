@@ -2,11 +2,6 @@
 
 ---
 
-[![Kottans-Frontend][icon-kottans]][kottans-frontend]
-[![MIT Licensed][icon-mit]][license]
-[![Awesome][icon-awesome]][awesome]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
 ## This is my second layout on [Figma](https://www.figma.com)
 
 ---
