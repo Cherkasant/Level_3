@@ -6,7 +6,7 @@
 
 ---
 
-**This homework was published in repository first\_\_layout**.
+**This work was published in repository first\_\_layout**.
 **This is link for my page ==>[Layout_3](https://cherkasant.github.io/Level_3/ 'Click me!!').**
 
 ---
